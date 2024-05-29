@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Degree Student Guide Admin</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
+  nav a:hover {
+    color: #007bff;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Degree Student Guide Admin</h1>
+</header>
+<p>This is a one stop destination for all DSG Admins to find resources.<p>
+<hr>
+<p> DSG DAILY APTITUDE AND GENERAL KNOWLEDGE RESOURCES:</p>
+<div>
+<a href="https://drive.google.com/drive/folders/1bjrmFl3yAUKIO8WZu6iy5wx1TEqY-1Rt" target="_blank">Click here to view :DSG QUIZ TEMPLATES & TUTORIAL VIDEO </a> </br> </br>
+  <a href="https://docs.google.com/spreadsheets/d/1PfasFLZsHKKyE9HisXvVYX5U9YuHf5-1fqYR_g9ovLU/edit#gid=694636679" target="_blank">Click here to view : DSG QUIZ QUESTIONS  </a>
+  
+</div>
+<hr>
+<script>
+  // Function to redirect to link on click
+  function redirectToLink(link) {
+    window.open(link, "_blank");
+  }
+  
+  // Attach click event listeners to the links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      redirectToLink(this.getAttribute('href'));
+    });
+  });
+</script>
+
+</body>
+</html>
